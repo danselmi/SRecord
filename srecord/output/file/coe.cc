@@ -206,6 +206,8 @@ srecord::output_file_coe::write(const srecord::record &record)
                 got_data = true;
             }
 
+            address += len;
+
             unsigned long d = addr + len;
             if (actual_depth < d)
                 actual_depth = d;
