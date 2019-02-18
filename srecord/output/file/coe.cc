@@ -197,13 +197,6 @@ srecord::output_file_coe::write(const srecord::record &record)
 
             if (address != record.get_address())
                 fatal_hole_error(address, record.get_address());
-            if
-            (
-                (record.get_address() % width_in_bytes) != 0
-            ||
-                (record.get_length() % width_in_bytes) != 0
-            )
-                fatal_alignment_error(width_in_bytes);
 
             for (unsigned j = 0; j < len; ++j)
             {
