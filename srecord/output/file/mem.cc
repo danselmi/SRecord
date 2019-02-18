@@ -120,7 +120,7 @@ srecord::output_file_mem::emit_header(void)
             put_stringf("#Depth=%lu\n", actual_depth / width_in_bytes);
         }
         put_stringf("#Width=%d\n", width);
-        // 0: binary, 1: octal, 3: decimal, 3: hexadecimal
+        // 0: binary, 1: octal, 2: decimal, 3: hexadecimal
         put_stringf("#AddrRadix=3\n");
         put_stringf("#DataRadix=3\n");
         put_stringf("#Data\n");
